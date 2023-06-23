@@ -1,0 +1,65 @@
+body{
+    color: #FFF !important;
+    background-color: #000 !important;
+}
+
+.glass-effect{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.box-shadow{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 190, 0.2);
+}
+
+.link{
+    color: #FFF !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover{
+    color:rgba(42, 116, 255, 0.9) !important;
+}
+
+.card{
+    width: 18rem !important;
+    background-color: #000 !important;
+    border-radius: 0 !important;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    width: 50vw;
+    padding: 50px;
+}
+
+.right img{
+    height: 100%;
+}
+
+
+/* responsiveness */
+@media screen and (max-width: 768px){
+    .main{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .right{
+        width: 100vw;
+    }
+}
